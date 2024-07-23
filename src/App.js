@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import './home.css';
+import { HomeComponent } from './HomeComponent';
+import HeaderComponent from './HeaderComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+      <div>
+        <HeaderComponent/>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -16,8 +20,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
+        </a> */}
+      </div>
+      <div>
+        <HomeComponent />
+      </div>
     </div>
   );
 }

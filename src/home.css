@@ -176,7 +176,7 @@
   align-items: flex-start;
   padding: 6px 14px;
   gap: 14px;
-  width: 70%;
+  width: 68%;
   /* height: 38px; */
   background: #ffffff;
   border-radius: 10px;
@@ -204,8 +204,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 25%;
-    height: 82px;
+    width: 30%;
+    height: 90px;
     border-radius: 10px;
     border: 0.5px solid var(--OtherColors-divider, #D1D3D4);
     background: linear-gradient(89.91deg, rgba(252, 243, 226, 0) -8.06%, rgba(252, 243, 226, 0.5) 104.31%);
@@ -248,6 +248,7 @@
     gap: 12px;
     background:#ffffff;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .home-content .second-content .cover-nfo {
@@ -388,13 +389,15 @@
     color: #ffffff;
 }
 
+/* ==================== nfoCard Ends ========================== */
+
 .home-content .third-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     /* padding: 10px; */
-    background: #ffffff;
+    background: #F9FCEC;
     border-radius: 10px;
 }
 
@@ -403,7 +406,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 15px;
-    background: #F9FCEC;
+    /* background: #F9FCEC; */
 }
 
 .home-content .third-content .small-invst-head .small-invst-title {
@@ -423,7 +426,8 @@
     gap: 24px; 
 }
 
-.home-content .third-content .small-invst-data .enter-name-bar {
+.home-content .third-content .small-invst-data .enter-name-bar,
+.home-content .ninth-content .download-left .enter-name-bar {
     padding: 10px 10px 10px 16px;
   font-weight: 400;
   font-size: 14px;
@@ -436,7 +440,8 @@
   color: #ffffff;
 }
 
-.home-content .third-content .small-invst-data .enter-name-bar::placeholder{
+.home-content .third-content .small-invst-data .enter-name-bar::placeholder,
+.home-content .ninth-content .download-left .enter-name-bar::placeholder {
   color: #6D6E71;
   ;
 }
@@ -452,4 +457,381 @@
     background: #F9F1FB;
     color: #97144D;
     font-weight: 500;
+}
+
+.home-content .fourth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #ffffff;
+    border-radius: 10px
+}
+
+.home-content .fourth-content .query-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 15px;
+    gap: 12px;
+}
+
+.home-content .fourth-content .query-div .query-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.home-content .fourth-content .query-div .query-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 8px;
+    font-size: 15px;
+    color: #505050;
+}
+
+.home-content .fourth-content .query-div .query-desc li {
+    color: #97144D;
+}
+
+.home-content .fourth-content .query-div .query-desc li span{
+    color: #505050;
+}
+
+.home-content .fourth-content .query-divvv .query-step-div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #D1D3D4;
+    background: #F9FCEC;
+}
+
+.home-content .fourth-content .query-divvv .query-step-div .query-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 15px;
+    gap: 12px;
+}
+
+.home-content .fourth-content .query-divvv .query-step-div .query-steps .step-head{
+    color: #000104;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.home-content .fourth-content .query-divvv .query-step-div .query-steps .step-desc{
+    font-size: 12px;
+    color: #505050;
+}
+
+.home-content .fifth-component {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.home-content .fifth-component .benefit-title {
+    display: flex;
+    margin: 15px;
+    color: #000104;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.home-content .fifth-component .benefit-content {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-flow: wrap; */
+    flex-wrap: wrap;
+    margin: 15px;
+    gap: 15px;
+}
+
+/* =========================== benefitCard ====================== */
+
+.benefit-card {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    /* background: var(--white, #ffffff); */
+    background: #f4f4f4;
+    border-radius: 10px;
+    border: 1px solid var(--OtherColors-disabledbox, #F4F4F4);
+    padding: 8px;
+}
+
+.benefit-card .benefit-card-left {
+    display: flex;
+    align-items: center;
+}
+
+.benefit-card .benefit-card-right {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.benefit-card .benefit-card-right .benefit-card-title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000104;
+}
+
+.benefit-card .benefit-card-right .benefit-card-desc {
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    color: #6D6E71;
+}
+
+
+/* ================================ benefitCard Ends ===================== */
+
+.home-content .sixth-content {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.home-content .sixth-content .mutualfunds-title {
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    color: var(--OtherColors-text1, #000104);
+    font-size: 20px;
+}
+
+.home-content .sixth-content .mutualfunds-content {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin: 15px;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card {
+    display: flex;
+    gap: 10px;
+    width: 358px;
+    border-radius: 10px;
+    border: 0.5px solid #E8E9EC;
+    padding: 5px;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card.yellow{
+    background: #F9FCEC;;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card.pink {
+    background: #FFF6F3;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card.orange {
+    background: #FCF5E8;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card .mutual-card-left {
+    display: flex;
+    align-items: center;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card .mutual-card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 5px;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card .mutual-card-right .mutual-card-titl{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000104;
+}
+
+.home-content .sixth-content .mutualfunds-content .mutualfund-card .mutual-card-right .mutual-card-desc{
+    text-align: left;
+    font-size: 16px;
+    color: #6D6E71;
+}
+
+.home-content .seventh-content {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.home-content .seventh-content .adv-mutualfund-title{ 
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--OtherColors-text1, #000104);
+    margin: 15px;
+}
+
+
+.home-content .seventh-content .adv-mutualfund-content {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+/* ================== advmutualCard =================== */
+
+
+.adv-mutual-card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 5px;
+    border: 0.5px solid #E8E9EC;
+    box-shadow: 0px 2px 12px 0px #0000000F;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.adv-mutual-card .adv-mutual-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #193661;
+    margin: 10px;
+    text-align: left;
+}
+
+.adv-mutual-card .adv-mutual-card-desc {
+    display: flex;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.adv-mutual-card .adv-mutual-card-img {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    justify-content: flex-end;
+    /* gap: 140px; */
+}
+
+.adv-mutual-card .adv-mutual-card-img.for-click {
+    justify-content: space-between;
+}
+
+.adv-mutual-card .adv-mutual-card-img .adv-mutual-clickhere {
+    font-size: 16px;
+    font-weight: 500;
+    color: #97144D;
+}
+
+.home-content .eightth-content {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.home-content .eightth-content .freq-ask-title {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--OtherColors-text1, #000104);
+}
+
+.home-content .eightth-content .freq-ask-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.home-content .eightth-content .freq-ask-content .freq-asked-opened {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.5px solid var(--OtherColors-divider, #D1D3D4);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.home-content .eightth-content .freq-ask-content .freq-asked-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0.5px solid var(--OtherColors-divider, #D1D3D4);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+.home-content .eightth-content .freq-ask-content .freq-asked-div.none {
+    border: none;
+    padding: 10px 20px 0;
+}
+
+.home-content .eightth-content .freq-ask-content .freq-asked-div .freq-asked-qn {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.home-content .eightth-content .freq-ask-content .freq-asked-ans {
+    display: flex;
+    text-align: left;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3C3C43D9;
+}
+
+.home-content .ninth-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #FFF2FB;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 0.5px solid #F4EBF9;
+}
+
+.home-content .ninth-content .download-left {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-content .ninth-content .download-left .download-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #193661;
+}
+
+.home-content .ninth-content .download-right {
+    padding: 14px 0;
 }
